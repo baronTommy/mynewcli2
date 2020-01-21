@@ -16,11 +16,11 @@ mynewcli2
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @xxxxxxxxxxxxxxxxxxxxxxxx/mynewcli2
+$ npm install -g @tommy_baron/mynewcli2
 $ mynewcli2 COMMAND
 running command...
 $ mynewcli2 (-v|--version|version)
-@xxxxxxxxxxxxxxxxxxxxxxxx/mynewcli2/0.0.1 darwin-x64 node-v13.6.0
+@tommy_baron/mynewcli2/0.0.2 darwin-x64 node-v13.6.0
 $ mynewcli2 --help [COMMAND]
 USAGE
   $ mynewcli2 COMMAND
@@ -30,6 +30,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`mynewcli2 aaa [FILE]`](#mynewcli2-aaa-file)
+* [`mynewcli2 autocomplete [SHELL]`](#mynewcli2-autocomplete-shell)
 * [`mynewcli2 hello [FILE]`](#mynewcli2-hello-file)
 * [`mynewcli2 help [COMMAND]`](#mynewcli2-help-command)
 
@@ -51,7 +52,30 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/aaa.ts](https://github.com/baronTommy/mynewcli2/blob/v0.0.1/src/commands/aaa.ts)_
+_See code: [src/commands/aaa.ts](https://github.com/baronTommy/mynewcli2/blob/v0.0.2/src/commands/aaa.ts)_
+
+## `mynewcli2 autocomplete [SHELL]`
+
+display autocomplete installation instructions
+
+```
+USAGE
+  $ mynewcli2 autocomplete [SHELL]
+
+ARGUMENTS
+  SHELL  shell type
+
+OPTIONS
+  -r, --refresh-cache  Refresh cache (ignores displaying instructions)
+
+EXAMPLES
+  $ mynewcli2 autocomplete
+  $ mynewcli2 autocomplete bash
+  $ mynewcli2 autocomplete zsh
+  $ mynewcli2 autocomplete --refresh-cache
+```
+
+_See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v0.1.5/src/commands/autocomplete/index.ts)_
 
 ## `mynewcli2 hello [FILE]`
 
@@ -71,7 +95,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/baronTommy/mynewcli2/blob/v0.0.1/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/baronTommy/mynewcli2/blob/v0.0.2/src/commands/hello.ts)_
 
 ## `mynewcli2 help [COMMAND]`
 

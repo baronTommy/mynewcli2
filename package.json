@@ -1,6 +1,6 @@
 {
-  "name": "@xxxxxxxxxxxxxxxxxxxxxxxx/mynewcli2",
-  "version": "0.0.1",
+  "name": "@tommy_baron/mynewcli2",
+  "version": "0.0.2",
   "author": "baronTommy @baronTommy",
   "bin": {
     "mynewcli2": "./bin/run"
@@ -9,7 +9,9 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
+    "@oclif/plugin-autocomplete": "0.1.5",
     "@oclif/plugin-help": "^2",
+    "@tommy_baron/mynewcli2": "0.0.2",
     "tsconfig-paths": "3.9.0",
     "tslib": "^1"
   },
@@ -48,7 +50,8 @@
     "commands": "./lib/commands",
     "bin": "mynewcli2",
     "plugins": [
-      "@oclif/plugin-help"
+      "@oclif/plugin-help",
+      "@oclif/plugin-autocomplete"
     ],
     "hooks": {
       "init": "./lib/hooks/init/myhook3"
