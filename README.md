@@ -16,11 +16,11 @@ mynewcli2
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g mynewcli2
+$ npm install -g @xxxxxxxxxxxxxxxxxxxxxxxx/mynewcli2
 $ mynewcli2 COMMAND
 running command...
 $ mynewcli2 (-v|--version|version)
-mynewcli2/0.0.0 darwin-x64 node-v13.6.0
+@xxxxxxxxxxxxxxxxxxxxxxxx/mynewcli2/0.0.1 darwin-x64 node-v13.6.0
 $ mynewcli2 --help [COMMAND]
 USAGE
   $ mynewcli2 COMMAND
@@ -29,12 +29,33 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`mynewcli2 aaa [FILE]`](#mynewcli2-aaa-file)
 * [`mynewcli2 hello [FILE]`](#mynewcli2-hello-file)
 * [`mynewcli2 help [COMMAND]`](#mynewcli2-help-command)
 
+## `mynewcli2 aaa [FILE]`
+
+describe the command here xxxxxxxxxxx
+
+```
+USAGE
+  $ mynewcli2 aaa [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+
+EXAMPLE
+  $ mynewcli2 helloaaaaaaaaaaaaaaaaaa
+  hello world from ./src/hello.ts!
+```
+
+_See code: [src/commands/aaa.ts](https://github.com/baronTommy/mynewcli2/blob/v0.0.1/src/commands/aaa.ts)_
+
 ## `mynewcli2 hello [FILE]`
 
-describe the command here
+describe the command here xxxxxxxxxxx
 
 ```
 USAGE
@@ -46,11 +67,11 @@ OPTIONS
   -n, --name=name  name to print
 
 EXAMPLE
-  $ mynewcli2 hello
+  $ mynewcli2 helloaaaaaaaaaaaaaaaaaa
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/baronTommy/mynewcli2/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/baronTommy/mynewcli2/blob/v0.0.1/src/commands/hello.ts)_
 
 ## `mynewcli2 help [COMMAND]`
 

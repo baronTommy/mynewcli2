@@ -1,6 +1,6 @@
 {
-  "name": "mynewcli2",
-  "version": "0.0.0",
+  "name": "@xxxxxxxxxxxxxxxxxxxxxxxx/mynewcli2",
+  "version": "0.0.1",
   "author": "baronTommy @baronTommy",
   "bin": {
     "mynewcli2": "./bin/run"
@@ -58,8 +58,10 @@
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "prepack": "rm -rf lib && tsc -b && node -r tsconfig-paths/register node_modules/.bin/oclif-dev manifest && oclif-dev readme",
+    "_prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "nyc --extension .ts mocha -r ts-node/register -r tsconfig-paths/register --forbid-only \"test/**/*.test.ts\"",
+    "_test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"
   },
   "types": "lib/index.d.ts"
